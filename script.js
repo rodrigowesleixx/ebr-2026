@@ -27,3 +27,4 @@ form.addEventListener('submit', function (event) {
 
   window.open(url, '_blank');
 });
+
