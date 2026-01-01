@@ -7,7 +7,7 @@
 }
 
 body {
- background-color: #d4a017;/*dourado*/
+ background-color: #000000;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-  background: #ffffff;
-  color: #333;
+  background: #d4a017;
+  color: #000000;
   max-width: 420px;
   width: 100%;
   border-radius: 15px;
@@ -32,12 +32,13 @@ body {
 
 .logo h1 {
   font-size: 26px;
-  color: #7c982a;
+  color: #000000;
+  
 }
 
 .logo p {
   font-size: 14px;
-  color: #555;
+  color: #000000;
 }
 
 .info {
@@ -47,20 +48,51 @@ body {
 
 .info h2 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Caixa do valor */
+.info {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Título */
+.info h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+/* Valor */
+.info p {
+  font-size: 25px;
+  font-weight: 800;
+  color: #000000; /* dourado */
+  letter-spacing: 1px;
 }
 
 .info p {
-  font-size: 14px;
-  color: #666;
+  transition: transform 0.2s ease;
 }
 
+.info p:hover {
+  transform: scale(1.05);
+}
+
+p.valor-inscricao {
+  font-size: 40px !important;
+  font-weight: 900 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+
+
 form {
-background-color: #ffffff;
-padding: 24px;
-border-radius: 12px;
-max-width: 420px;
-margin: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 input {
@@ -95,7 +127,7 @@ footer {
   text-align: center;
   margin-top: 15px;
   font-size: 12px;
-  color: #888;
+  color: #050505;
 }
 
 /* ===== Personalização dos botões de opção (Turma) ===== */
@@ -240,3 +272,56 @@ form button:hover {
 form input + input {
   margin-top: 4px;
 }
+/* ===== Formulário – identidade EBR ===== */
+
+form {
+  margin-top: 10px;
+}
+
+/* Inputs */
+form input {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 13px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1a1a1a;
+  transition: border-color 0.2s ease;
+}
+
+/* Foco dourado */
+form input:focus {
+  border-color: #d4a017; /* dourado */
+  outline: none;
+}
+
+/* Placeholder discreto */
+form input::placeholder {
+  color: #000000;
+}
+
+/* Botão principal */
+form button {
+  margin-top: 12px;
+  background: #1a1a1a; /* preto */
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 14px;
+  font-weight: 600;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+/* Hover do botão */
+form button:hover {
+  background: #f4f4f4; /* dourado */
+  color: #1a1a1a;
+}
+
+/* Espaçamento */
+form input + input {
+  margin-top: 4px;
+}
+
+
