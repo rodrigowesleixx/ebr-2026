@@ -12,7 +12,7 @@ form.addEventListener('submit', function (event) {
   const turmaSelecionada = document.querySelector('input[name="turma"]:checked');
   const turma = turmaSelecionada ? turmaSelecionada.value : 'Não informado';
 
-  const numeroIgreja = '5585994215508';
+  const numeroIgreja = '5585992269144';
 
   const mensagem =
     `Olá! Gostaria de me inscrever na *EBR – Escola Bíblica Restaurar*.%0A%0A` +
@@ -27,4 +27,3 @@ form.addEventListener('submit', function (event) {
 
   window.open(url, '_blank');
 });
-
