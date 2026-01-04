@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  background: #d4a017;
+  background: #ffffff;
   color: #000000;
   max-width: 420px;
   width: 100%;
@@ -158,14 +158,14 @@ footer {
 
 /* Hover */
 .opcoes label:hover {
-  border-color: #2a5298;
+  border-color: #d4a017;
   background: #eef3ff;
 }
 
 /* Quando estiver selecionado */
 .opcoes label:has(input:checked) {
-  background: #2a5298;
-  border-color: #2a5298;
+  background: #d4a017;
+  border-color: #000000;
   color: #fff;
 }
 
@@ -315,7 +315,7 @@ form button {
 
 /* Hover do botão */
 form button:hover {
-  background: #f4f4f4; /* dourado */
+  background: #d4a017; /* dourado */
   color: #1a1a1a;
 }
 
